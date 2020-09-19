@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { EjProvider } from './context/EjContext';
 import Nav from './components/Nav';
 import Content from './components/Content';
+import List from './components/List';
 
 function App() {
  const [cont,setCont] = useState("");
@@ -18,8 +19,7 @@ function App() {
   return (
     <EjProvider value={contextData}>
       <Nav/>
-      <Content/>
-      
+      <List/>      
     </EjProvider>
   );
 }
