@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import { EjProvider } from './context/EjContext';
+import Nav from './components/Nav';
+import Content from './components/Content';
 
 function App() {
+ const [cont,setCont] = useState("");
+
+ function handleAlgo(info){
+  setCont(info)
+ }
+
+  const contextData ={
+   cont,
+   handleAlgo,
+  }
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EjProvider value={contextData}>
+      <Nav/>
+      <Content/>
+      
+    </EjProvider>
   );
 }
 
