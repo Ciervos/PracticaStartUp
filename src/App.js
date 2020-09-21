@@ -8,7 +8,7 @@ function App() {
  const [cont,setCont] = useState("");
 
  function handleAlgo(info){
-  setCont(info)
+   setCont(info)
  }
 
   const contextData ={
