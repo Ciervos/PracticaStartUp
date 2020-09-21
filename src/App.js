@@ -20,6 +20,7 @@ function App() {
     <EjProvider value={contextData}>
       <Nav/>
       <List/>      
+      <footer>Made by SCREAMS&PAIN by Gremlin</footer>
     </EjProvider>
   );
 }

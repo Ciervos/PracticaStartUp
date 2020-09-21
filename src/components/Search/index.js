@@ -1,11 +1,12 @@
 import React,{useContext} from 'react';
+import "./style.scss";
 
 
 function Search() {
  
   return (
   <>
-  <p>a</p>
+  <input className="searchstyle" type="text"/>
   </>
     )
 }
