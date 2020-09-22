@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Agregar from './pages/Agregar/index';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Route exact path="/" component={App}/>
+    <Route exact path="/agregar" component={Agregar}/>
+  </Router>,
   document.getElementById('root')
 );
 
