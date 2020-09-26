@@ -8,7 +8,7 @@ import logo from '../../imgs/Butterfly.png';
 function Nav() {
   return(
     <div id="navbar">
-    <img src={logo}/>
+    <Link to="/"><img src={logo}/></Link>
     <Search/>
     <Link to="/agregar">Agregar startup</Link>
     

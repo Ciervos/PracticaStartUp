@@ -1,12 +1,12 @@
 [{
-  "name": "Primer",
-  "desc": "Ejemplo",
-  "img": "https://cdn.domestika.org/c_fill,dpr_auto,h_256,t_base_params.format_jpg,w_256/v1423590393/avatars/000/086/751/86751-original.jpg?1423590393"
+  "Nombre": "Primer",
+  "Desc": "Ejemplo",
+  "Logo": "https://cdn.domestika.org/c_fill,dpr_auto,h_256,t_base_params.format_jpg,w_256/v1423590393/avatars/000/086/751/86751-original.jpg?1423590393"
 
   },
   {
-    "name": "Segundo",
-    "desc": "Ejemplito",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC-oDFt9MNJsPoE2IKier8d77ypcAqpx3nbQ&usqp=CAU"
+    "Nombre": "Segundo",
+    "Desc": "Ejemplito",
+    "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC-oDFt9MNJsPoE2IKier8d77ypcAqpx3nbQ&usqp=CAU"
   
   }]

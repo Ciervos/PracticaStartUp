@@ -3,12 +3,16 @@ import EjContext from "../../context/EjContext";
 import Item from "../Item";
 import Listado from "../../hardc.json";
 import "./style.scss";
+import {useCustomStorage} from '../../hooks/customStorage';
 
 
 function List() {
-  const [filtro,setFiltro] = useState(Listado);
+  const testeo = useCustomStorage();
+  const [filtro,setFiltro] = useState(testeo);
   const laData = useContext(EjContext);
   const {cont} = laData;
+  
+
   
   // useEffect(() => {
    
@@ -26,17 +30,20 @@ function List() {
   //   }
 
   
+//
 
+//
+console.log(testeo)
 
   return(<div className="listaconte">
   
   {filtro.filter((startup) =>{
-       return(startup.name
+       return(startup.Nombre
         .toLowerCase()
         .includes(cont.toLowerCase()))
      }).map((startup, key) => {
         return (
-          <Item name={startup.name} desc={startup.desc} imagen={startup.img} key={key}/>
+          <Item name={startup.Nombre} desc={startup.Desc} imagen={startup.Logo} mail={startup.Mail} web={startup.Web} twitter={startup.Twitter} ig={startup.Instagram} key={key}/>
         );
       })}
   

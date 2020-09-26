@@ -3,6 +3,7 @@ import { EjProvider } from './context/EjContext';
 import Nav from './components/Nav';
 import Content from './components/Content';
 import List from './components/List';
+import LocalEjercicio from './components/LocalEjercicio';
 
 function App() {
  const [cont,setCont] = useState("");
@@ -21,7 +22,7 @@ function App() {
       <Nav/>
       <List/>      
       <footer>Made by SCREAMS&PAIN by Gremlin</footer>
-    </EjProvider>
+      </EjProvider>
   );
 }
 
