@@ -6,6 +6,6 @@ export const useCustomStorage= () =>{
  const testing = (Object.entries(local).map((item,key)=>{
   return(JSON.parse(item[1]))
   }))
-console.log(testing)
+
  return(testing)
 }

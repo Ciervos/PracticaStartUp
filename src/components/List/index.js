@@ -33,7 +33,6 @@ function List() {
 //
 
 //
-console.log(testeo)
 
   return(<div className="listaconte">
   
